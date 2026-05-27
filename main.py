@@ -74,7 +74,7 @@ def main():
 
     time.sleep(3)
 
-    hold_right_arrow(0.75)
+    hold_right_arrow(0.725)
 
     time.sleep(0.3)
 
@@ -101,7 +101,11 @@ def main():
 if __name__ == "__main__":
     time.sleep(5)
 
+    delay = 60 * 99
 
     while True:
         main()
-        time.sleep(60 * 99)
+
+        for i in range(delay):
+            print(f"Delay: {i}s/{delay}s", end="\r")
+            time.sleep(1)
