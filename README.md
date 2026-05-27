@@ -1,5 +1,21 @@
 # Merge Shop bot
 
-You will need a RP2040 board, flashed with CircuitPython.
+### Requirements
+- [RP2040 Board](https://www.raspberrypi.com/products/raspberry-pi-pico/)
+- [uv](https://github.com/astral-sh/uv)
 
-Put the code in firmware to the CircuitPython board.
+Flash RP2040 board with CircuitPython.
+
+Put the code in firmware folder to the CircuitPython board.
+
+Install dependencies:
+
+```sh
+uv sync
+```
+
+Run the script:
+
+```sh
+uv run main.py
+```
